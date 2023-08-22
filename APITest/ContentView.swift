@@ -13,6 +13,7 @@ struct ContentView: View {
             Image("apple")
         }
         .padding()
+        Text("commit test")
     }
 }
 
