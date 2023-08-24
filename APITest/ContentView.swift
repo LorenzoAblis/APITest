@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    let langs = ["Java", "C#", "Python", "SQL"]
+    
     var body: some View {
         VStack {
-            Image("apple")
+            List(langs, id:\.self) { lang in
+                Text(lang)
+            }
         }
-        .padding()
-        Text("commit test")
     }
 }
 
